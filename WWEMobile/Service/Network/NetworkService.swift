@@ -29,7 +29,7 @@ open class NetworkService {
                 let value = response.result.value
                 let json = JSON(value as Any)
                 
-                //print("\nSuccess: \(String(describing: value))")
+                print("\nSuccess: \(String(describing: value))")
                 
                 completion(json, nil)
             }

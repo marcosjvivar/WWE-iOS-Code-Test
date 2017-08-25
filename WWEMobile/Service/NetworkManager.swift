@@ -19,8 +19,7 @@ open class NetworkManager: NSObject {
         return _sharedInstance
     }
     
-    override init()
-    {}
+    override init() {}
     
     // MARK: - Movies
     
