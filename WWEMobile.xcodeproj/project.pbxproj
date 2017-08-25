@@ -27,8 +27,24 @@
 		26AED4651F5094DF000C9BD7 /* WWEFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4631F5094DF000C9BD7 /* WWEFeedModel.swift */; };
 		26AED4691F50961A000C9BD7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4681F50961A000C9BD7 /* NetworkService.swift */; };
 		26AED46A1F50961A000C9BD7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4681F50961A000C9BD7 /* NetworkService.swift */; };
+		26AED46C1F50A963000C9BD7 /* VideosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED46B1F50A963000C9BD7 /* VideosDataSource.swift */; };
+		26AED46E1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED46D1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift */; };
+		26AED4721F50AEEA000C9BD7 /* wwe-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 26AED4711F50AEEA000C9BD7 /* wwe-logo.png */; };
+		26AED4751F50B004000C9BD7 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4741F50B004000C9BD7 /* VideoCell.swift */; };
+		26AED4A01F50CFB4000C9BD7 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26AED4931F50CFB4000C9BD7 /* LICENSE.txt */; };
+		26AED4A11F50CFB4000C9BD7 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED4941F50CFB4000C9BD7 /* Roboto-Black.ttf */; };
+		26AED4A21F50CFB4000C9BD7 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED4951F50CFB4000C9BD7 /* Roboto-BlackItalic.ttf */; };
+		26AED4A31F50CFB4000C9BD7 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED4961F50CFB4000C9BD7 /* Roboto-Bold.ttf */; };
+		26AED4A41F50CFB4000C9BD7 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED4971F50CFB4000C9BD7 /* Roboto-BoldItalic.ttf */; };
+		26AED4A51F50CFB4000C9BD7 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED4981F50CFB4000C9BD7 /* Roboto-Italic.ttf */; };
+		26AED4A61F50CFB4000C9BD7 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED4991F50CFB4000C9BD7 /* Roboto-Light.ttf */; };
+		26AED4A71F50CFB4000C9BD7 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED49A1F50CFB4000C9BD7 /* Roboto-LightItalic.ttf */; };
+		26AED4A81F50CFB4000C9BD7 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED49B1F50CFB4000C9BD7 /* Roboto-Medium.ttf */; };
+		26AED4A91F50CFB4000C9BD7 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED49C1F50CFB4000C9BD7 /* Roboto-MediumItalic.ttf */; };
+		26AED4AA1F50CFB4000C9BD7 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED49D1F50CFB4000C9BD7 /* Roboto-Regular.ttf */; };
+		26AED4AB1F50CFB4000C9BD7 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED49E1F50CFB4000C9BD7 /* Roboto-Thin.ttf */; };
+		26AED4AC1F50CFB4000C9BD7 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AED49F1F50CFB4000C9BD7 /* Roboto-ThinItalic.ttf */; };
 		26CFC7E61F4F6DEA00A17AFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CFC7E51F4F6DEA00A17AFD /* AppDelegate.swift */; };
-		26CFC7E81F4F6DEA00A17AFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CFC7E71F4F6DEA00A17AFD /* ViewController.swift */; };
 		26CFC7EB1F4F6DEA00A17AFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CFC7E91F4F6DEA00A17AFD /* Main.storyboard */; };
 		26CFC7ED1F4F6DEA00A17AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26CFC7EC1F4F6DEA00A17AFD /* Assets.xcassets */; };
 		26CFC7F01F4F6DEA00A17AFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CFC7EE1F4F6DEA00A17AFD /* LaunchScreen.storyboard */; };
@@ -58,9 +74,25 @@
 		26AED4601F509334000C9BD7 /* WWEVideoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoManager.swift; path = "Service/Video Manager/WWEVideoManager.swift"; sourceTree = "<group>"; };
 		26AED4631F5094DF000C9BD7 /* WWEFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEFeedModel.swift; path = Model/WWEFeedModel.swift; sourceTree = "<group>"; };
 		26AED4681F50961A000C9BD7 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = Service/Network/NetworkService.swift; sourceTree = "<group>"; };
+		26AED46B1F50A963000C9BD7 /* VideosDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideosDataSource.swift; path = "Data Source/VideosDataSource.swift"; sourceTree = "<group>"; };
+		26AED46D1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoFeedCollectionViewController.swift; path = Controller/VideoFeedCollectionViewController.swift; sourceTree = "<group>"; };
+		26AED4711F50AEEA000C9BD7 /* wwe-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wwe-logo.png"; path = "Resource/wwe-logo.png"; sourceTree = "<group>"; };
+		26AED4741F50B004000C9BD7 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCell.swift; path = UI/Cell/VideoCell.swift; sourceTree = "<group>"; };
+		26AED4931F50CFB4000C9BD7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = Resource/Roboto/LICENSE.txt; sourceTree = "<group>"; };
+		26AED4941F50CFB4000C9BD7 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "Resource/Roboto/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		26AED4951F50CFB4000C9BD7 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "Resource/Roboto/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		26AED4961F50CFB4000C9BD7 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "Resource/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		26AED4971F50CFB4000C9BD7 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "Resource/Roboto/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		26AED4981F50CFB4000C9BD7 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Italic.ttf"; path = "Resource/Roboto/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		26AED4991F50CFB4000C9BD7 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "Resource/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		26AED49A1F50CFB4000C9BD7 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "Resource/Roboto/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		26AED49B1F50CFB4000C9BD7 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "Resource/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		26AED49C1F50CFB4000C9BD7 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "Resource/Roboto/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		26AED49D1F50CFB4000C9BD7 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "Resource/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		26AED49E1F50CFB4000C9BD7 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "Resource/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		26AED49F1F50CFB4000C9BD7 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-ThinItalic.ttf"; path = "Resource/Roboto/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		26CFC7E21F4F6DEA00A17AFD /* WWEMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWEMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CFC7E51F4F6DEA00A17AFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26CFC7E71F4F6DEA00A17AFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
 		26CFC7EA1F4F6DEA00A17AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26CFC7EC1F4F6DEA00A17AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resource/Assets.xcassets; sourceTree = "<group>"; };
 		26CFC7EF1F4F6DEA00A17AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,7 +142,7 @@
 		26AED4441F507F30000C9BD7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				26CFC7E71F4F6DEA00A17AFD /* ViewController.swift */,
+				26AED46D1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +150,7 @@
 		26AED4451F507F36000C9BD7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				26AED4731F50AFD5000C9BD7 /* Cells */,
 				26CFC7E91F4F6DEA00A17AFD /* Main.storyboard */,
 				26CFC7EE1F4F6DEA00A17AFD /* LaunchScreen.storyboard */,
 			);
@@ -144,6 +177,7 @@
 		26AED4511F50817C000C9BD7 /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
+				26AED46B1F50A963000C9BD7 /* VideosDataSource.swift */,
 			);
 			name = "Data Sources";
 			sourceTree = "<group>";
@@ -151,6 +185,8 @@
 		26AED4521F5081A2000C9BD7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				26AED4911F50CF97000C9BD7 /* Fonts */,
+				26AED4711F50AEEA000C9BD7 /* wwe-logo.png */,
 				26CFC7EC1F4F6DEA00A17AFD /* Assets.xcassets */,
 				26AED4561F5088AB000C9BD7 /* WWEDefines.swift */,
 				26AED4591F5088CC000C9BD7 /* WWEConfiguration.swift */,
@@ -183,6 +219,42 @@
 			name = Networking;
 			sourceTree = "<group>";
 		};
+		26AED4731F50AFD5000C9BD7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				26AED4741F50B004000C9BD7 /* VideoCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		26AED4911F50CF97000C9BD7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				26AED4921F50CFA7000C9BD7 /* Roboto */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		26AED4921F50CFA7000C9BD7 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				26AED4931F50CFB4000C9BD7 /* LICENSE.txt */,
+				26AED4941F50CFB4000C9BD7 /* Roboto-Black.ttf */,
+				26AED4951F50CFB4000C9BD7 /* Roboto-BlackItalic.ttf */,
+				26AED4961F50CFB4000C9BD7 /* Roboto-Bold.ttf */,
+				26AED4971F50CFB4000C9BD7 /* Roboto-BoldItalic.ttf */,
+				26AED4981F50CFB4000C9BD7 /* Roboto-Italic.ttf */,
+				26AED4991F50CFB4000C9BD7 /* Roboto-Light.ttf */,
+				26AED49A1F50CFB4000C9BD7 /* Roboto-LightItalic.ttf */,
+				26AED49B1F50CFB4000C9BD7 /* Roboto-Medium.ttf */,
+				26AED49C1F50CFB4000C9BD7 /* Roboto-MediumItalic.ttf */,
+				26AED49D1F50CFB4000C9BD7 /* Roboto-Regular.ttf */,
+				26AED49E1F50CFB4000C9BD7 /* Roboto-Thin.ttf */,
+				26AED49F1F50CFB4000C9BD7 /* Roboto-ThinItalic.ttf */,
+			);
+			name = Roboto;
+			sourceTree = "<group>";
+		};
 		26CFC7D91F4F6DEA00A17AFD = {
 			isa = PBXGroup;
 			children = (
@@ -208,13 +280,13 @@
 			children = (
 				26CFC7E51F4F6DEA00A17AFD /* AppDelegate.swift */,
 				26CFC7F11F4F6DEA00A17AFD /* Info.plist */,
-				26AED4521F5081A2000C9BD7 /* Resources */,
+				26AED4441F507F30000C9BD7 /* Controllers */,
 				26AED4511F50817C000C9BD7 /* Data Sources */,
+				26AED4431F507F2B000C9BD7 /* Models */,
 				26AED4501F508169000C9BD7 /* Protocols */,
+				26AED4521F5081A2000C9BD7 /* Resources */,
 				26AED4461F507F3B000C9BD7 /* Services */,
 				26AED4451F507F36000C9BD7 /* UI */,
-				26AED4441F507F30000C9BD7 /* Controllers */,
-				26AED4431F507F2B000C9BD7 /* Models */,
 			);
 			path = WWEMobile;
 			sourceTree = "<group>";
@@ -338,9 +410,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26AED4AB1F50CFB4000C9BD7 /* Roboto-Thin.ttf in Resources */,
+				26AED4A81F50CFB4000C9BD7 /* Roboto-Medium.ttf in Resources */,
+				26AED4A41F50CFB4000C9BD7 /* Roboto-BoldItalic.ttf in Resources */,
+				26AED4721F50AEEA000C9BD7 /* wwe-logo.png in Resources */,
+				26AED4A71F50CFB4000C9BD7 /* Roboto-LightItalic.ttf in Resources */,
+				26AED4A91F50CFB4000C9BD7 /* Roboto-MediumItalic.ttf in Resources */,
 				26CFC7F01F4F6DEA00A17AFD /* LaunchScreen.storyboard in Resources */,
+				26AED4A61F50CFB4000C9BD7 /* Roboto-Light.ttf in Resources */,
 				26CFC7ED1F4F6DEA00A17AFD /* Assets.xcassets in Resources */,
+				26AED4A21F50CFB4000C9BD7 /* Roboto-BlackItalic.ttf in Resources */,
+				26AED4AC1F50CFB4000C9BD7 /* Roboto-ThinItalic.ttf in Resources */,
+				26AED4A01F50CFB4000C9BD7 /* LICENSE.txt in Resources */,
 				26CFC7EB1F4F6DEA00A17AFD /* Main.storyboard in Resources */,
+				26AED4A51F50CFB4000C9BD7 /* Roboto-Italic.ttf in Resources */,
+				26AED4AA1F50CFB4000C9BD7 /* Roboto-Regular.ttf in Resources */,
+				26AED4A31F50CFB4000C9BD7 /* Roboto-Bold.ttf in Resources */,
+				26AED4A11F50CFB4000C9BD7 /* Roboto-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +481,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WWEMobile/Pods-WWEMobile-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -404,6 +491,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -423,6 +511,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WWEMobile-WWEMobileTests/Pods-WWEMobile-WWEMobileTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -432,6 +521,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -485,13 +575,15 @@
 			files = (
 				26AED44E1F508162000C9BD7 /* WWEVideoTagModel.swift in Sources */,
 				26AED4611F509334000C9BD7 /* WWEVideoManager.swift in Sources */,
+				26AED46C1F50A963000C9BD7 /* VideosDataSource.swift in Sources */,
 				26AED44B1F508147000C9BD7 /* WWEVideoFormatModel.swift in Sources */,
 				26AED4641F5094DF000C9BD7 /* WWEFeedModel.swift in Sources */,
+				26AED4751F50B004000C9BD7 /* VideoCell.swift in Sources */,
 				26AED4541F508711000C9BD7 /* NetworkManager.swift in Sources */,
 				26AED4481F508124000C9BD7 /* WWEVideoModel.swift in Sources */,
 				26AED45D1F5090A3000C9BD7 /* DBManager.swift in Sources */,
+				26AED46E1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift in Sources */,
 				26AED45A1F5088CC000C9BD7 /* WWEConfiguration.swift in Sources */,
-				26CFC7E81F4F6DEA00A17AFD /* ViewController.swift in Sources */,
 				26AED4571F5088AB000C9BD7 /* WWEDefines.swift in Sources */,
 				26AED4691F50961A000C9BD7 /* NetworkService.swift in Sources */,
 				26CFC7E61F4F6DEA00A17AFD /* AppDelegate.swift in Sources */,
