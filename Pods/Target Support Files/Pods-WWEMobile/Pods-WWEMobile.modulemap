@@ -1,0 +1,6 @@
+framework module Pods_WWEMobile {
+  umbrella header "Pods-WWEMobile-umbrella.h"
+
+  export *
+  module * { export * }
+}
