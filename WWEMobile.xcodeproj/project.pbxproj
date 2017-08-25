@@ -7,12 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26AED4481F508124000C9BD7 /* WWEVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4471F508124000C9BD7 /* WWEVideoModel.swift */; };
+		26AED4491F508124000C9BD7 /* WWEVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4471F508124000C9BD7 /* WWEVideoModel.swift */; };
+		26AED44B1F508147000C9BD7 /* WWEVideoFormatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44A1F508147000C9BD7 /* WWEVideoFormatModel.swift */; };
+		26AED44C1F508147000C9BD7 /* WWEVideoFormatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44A1F508147000C9BD7 /* WWEVideoFormatModel.swift */; };
+		26AED44E1F508162000C9BD7 /* WWEVideoTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44D1F508162000C9BD7 /* WWEVideoTagModel.swift */; };
+		26AED44F1F508162000C9BD7 /* WWEVideoTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44D1F508162000C9BD7 /* WWEVideoTagModel.swift */; };
+		26AED4541F508711000C9BD7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4531F508711000C9BD7 /* NetworkManager.swift */; };
+		26AED4551F508711000C9BD7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4531F508711000C9BD7 /* NetworkManager.swift */; };
+		26AED4571F5088AB000C9BD7 /* WWEDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4561F5088AB000C9BD7 /* WWEDefines.swift */; };
+		26AED4581F5088AB000C9BD7 /* WWEDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4561F5088AB000C9BD7 /* WWEDefines.swift */; };
+		26AED45A1F5088CC000C9BD7 /* WWEConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4591F5088CC000C9BD7 /* WWEConfiguration.swift */; };
+		26AED45B1F5088CC000C9BD7 /* WWEConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4591F5088CC000C9BD7 /* WWEConfiguration.swift */; };
+		26AED45D1F5090A3000C9BD7 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED45C1F5090A3000C9BD7 /* DBManager.swift */; };
+		26AED45E1F5090A3000C9BD7 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED45C1F5090A3000C9BD7 /* DBManager.swift */; };
+		26AED4611F509334000C9BD7 /* WWEVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4601F509334000C9BD7 /* WWEVideoManager.swift */; };
+		26AED4621F509334000C9BD7 /* WWEVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4601F509334000C9BD7 /* WWEVideoManager.swift */; };
+		26AED4641F5094DF000C9BD7 /* WWEFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4631F5094DF000C9BD7 /* WWEFeedModel.swift */; };
+		26AED4651F5094DF000C9BD7 /* WWEFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4631F5094DF000C9BD7 /* WWEFeedModel.swift */; };
+		26AED4691F50961A000C9BD7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4681F50961A000C9BD7 /* NetworkService.swift */; };
+		26AED46A1F50961A000C9BD7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4681F50961A000C9BD7 /* NetworkService.swift */; };
 		26CFC7E61F4F6DEA00A17AFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CFC7E51F4F6DEA00A17AFD /* AppDelegate.swift */; };
 		26CFC7E81F4F6DEA00A17AFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CFC7E71F4F6DEA00A17AFD /* ViewController.swift */; };
 		26CFC7EB1F4F6DEA00A17AFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CFC7E91F4F6DEA00A17AFD /* Main.storyboard */; };
 		26CFC7ED1F4F6DEA00A17AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26CFC7EC1F4F6DEA00A17AFD /* Assets.xcassets */; };
 		26CFC7F01F4F6DEA00A17AFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CFC7EE1F4F6DEA00A17AFD /* LaunchScreen.storyboard */; };
 		26CFC7FB1F4F6DEA00A17AFD /* WWEMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CFC7FA1F4F6DEA00A17AFD /* WWEMobileTests.swift */; };
+		4CBFD515389BDDF8876CBFF8 /* Pods_WWEMobile_WWEMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E1C8464EE401E5E0914053 /* Pods_WWEMobile_WWEMobileTests.framework */; };
+		AD7E0FEAC68C911A7119E4E0 /* Pods_WWEMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E18C8CD94DB75B08E007D16 /* Pods_WWEMobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +48,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26AED4471F508124000C9BD7 /* WWEVideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoModel.swift; path = Model/WWEVideoModel.swift; sourceTree = "<group>"; };
+		26AED44A1F508147000C9BD7 /* WWEVideoFormatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoFormatModel.swift; path = Model/WWEVideoFormatModel.swift; sourceTree = "<group>"; };
+		26AED44D1F508162000C9BD7 /* WWEVideoTagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoTagModel.swift; path = Model/WWEVideoTagModel.swift; sourceTree = "<group>"; };
+		26AED4531F508711000C9BD7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Service/NetworkManager.swift; sourceTree = "<group>"; };
+		26AED4561F5088AB000C9BD7 /* WWEDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEDefines.swift; path = Resource/WWEDefines.swift; sourceTree = "<group>"; };
+		26AED4591F5088CC000C9BD7 /* WWEConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEConfiguration.swift; path = Resource/WWEConfiguration.swift; sourceTree = "<group>"; };
+		26AED45C1F5090A3000C9BD7 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = Service/DBManager.swift; sourceTree = "<group>"; };
+		26AED4601F509334000C9BD7 /* WWEVideoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoManager.swift; path = "Service/Video Manager/WWEVideoManager.swift"; sourceTree = "<group>"; };
+		26AED4631F5094DF000C9BD7 /* WWEFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEFeedModel.swift; path = Model/WWEFeedModel.swift; sourceTree = "<group>"; };
+		26AED4681F50961A000C9BD7 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = Service/Network/NetworkService.swift; sourceTree = "<group>"; };
 		26CFC7E21F4F6DEA00A17AFD /* WWEMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWEMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CFC7E51F4F6DEA00A17AFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26CFC7E71F4F6DEA00A17AFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26CFC7E71F4F6DEA00A17AFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controller/ViewController.swift; sourceTree = "<group>"; };
 		26CFC7EA1F4F6DEA00A17AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		26CFC7EC1F4F6DEA00A17AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26CFC7EC1F4F6DEA00A17AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resource/Assets.xcassets; sourceTree = "<group>"; };
 		26CFC7EF1F4F6DEA00A17AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26CFC7F11F4F6DEA00A17AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26CFC7F61F4F6DEA00A17AFD /* WWEMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWEMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CFC7FA1F4F6DEA00A17AFD /* WWEMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWEMobileTests.swift; sourceTree = "<group>"; };
 		26CFC7FC1F4F6DEA00A17AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4307E4B0A0F25489A95A7821 /* Pods-WWEMobile-WWEMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWEMobile-WWEMobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWEMobile-WWEMobileTests/Pods-WWEMobile-WWEMobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		69E1C8464EE401E5E0914053 /* Pods_WWEMobile_WWEMobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWEMobile_WWEMobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E18C8CD94DB75B08E007D16 /* Pods_WWEMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WWEMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB94A2C1FB4F5D3935FF285 /* Pods-WWEMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWEMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWEMobile/Pods-WWEMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		C872BCFE96D86B1E35C2D387 /* Pods-WWEMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWEMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-WWEMobile/Pods-WWEMobile.release.xcconfig"; sourceTree = "<group>"; };
+		F3E694B80A9B1722A73EE9EA /* Pods-WWEMobile-WWEMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WWEMobile-WWEMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WWEMobile-WWEMobileTests/Pods-WWEMobile-WWEMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD7E0FEAC68C911A7119E4E0 /* Pods_WWEMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +89,108 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBFD515389BDDF8876CBFF8 /* Pods_WWEMobile_WWEMobileTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26AED4431F507F2B000C9BD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26AED4631F5094DF000C9BD7 /* WWEFeedModel.swift */,
+				26AED44A1F508147000C9BD7 /* WWEVideoFormatModel.swift */,
+				26AED4471F508124000C9BD7 /* WWEVideoModel.swift */,
+				26AED44D1F508162000C9BD7 /* WWEVideoTagModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		26AED4441F507F30000C9BD7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				26CFC7E71F4F6DEA00A17AFD /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		26AED4451F507F36000C9BD7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				26CFC7E91F4F6DEA00A17AFD /* Main.storyboard */,
+				26CFC7EE1F4F6DEA00A17AFD /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		26AED4461F507F3B000C9BD7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				26AED45F1F509301000C9BD7 /* Video */,
+				26AED4671F509570000C9BD7 /* Networking */,
+				26AED4661F509566000C9BD7 /* DB */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		26AED4501F508169000C9BD7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		26AED4511F50817C000C9BD7 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		26AED4521F5081A2000C9BD7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26CFC7EC1F4F6DEA00A17AFD /* Assets.xcassets */,
+				26AED4561F5088AB000C9BD7 /* WWEDefines.swift */,
+				26AED4591F5088CC000C9BD7 /* WWEConfiguration.swift */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		26AED45F1F509301000C9BD7 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				26AED4601F509334000C9BD7 /* WWEVideoManager.swift */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		26AED4661F509566000C9BD7 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				26AED45C1F5090A3000C9BD7 /* DBManager.swift */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		26AED4671F509570000C9BD7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				26AED4681F50961A000C9BD7 /* NetworkService.swift */,
+				26AED4531F508711000C9BD7 /* NetworkManager.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		26CFC7D91F4F6DEA00A17AFD = {
 			isa = PBXGroup;
 			children = (
 				26CFC7E41F4F6DEA00A17AFD /* WWEMobile */,
 				26CFC7F91F4F6DEA00A17AFD /* WWEMobileTests */,
 				26CFC7E31F4F6DEA00A17AFD /* Products */,
+				58A3B1B710839E5E4D338BD1 /* Pods */,
+				552EAB85200854F252ADB0BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +207,14 @@
 			isa = PBXGroup;
 			children = (
 				26CFC7E51F4F6DEA00A17AFD /* AppDelegate.swift */,
-				26CFC7E71F4F6DEA00A17AFD /* ViewController.swift */,
-				26CFC7E91F4F6DEA00A17AFD /* Main.storyboard */,
-				26CFC7EC1F4F6DEA00A17AFD /* Assets.xcassets */,
-				26CFC7EE1F4F6DEA00A17AFD /* LaunchScreen.storyboard */,
 				26CFC7F11F4F6DEA00A17AFD /* Info.plist */,
+				26AED4521F5081A2000C9BD7 /* Resources */,
+				26AED4511F50817C000C9BD7 /* Data Sources */,
+				26AED4501F508169000C9BD7 /* Protocols */,
+				26AED4461F507F3B000C9BD7 /* Services */,
+				26AED4451F507F36000C9BD7 /* UI */,
+				26AED4441F507F30000C9BD7 /* Controllers */,
+				26AED4431F507F2B000C9BD7 /* Models */,
 			);
 			path = WWEMobile;
 			sourceTree = "<group>";
@@ -96,6 +228,26 @@
 			path = WWEMobileTests;
 			sourceTree = "<group>";
 		};
+		552EAB85200854F252ADB0BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E18C8CD94DB75B08E007D16 /* Pods_WWEMobile.framework */,
+				69E1C8464EE401E5E0914053 /* Pods_WWEMobile_WWEMobileTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58A3B1B710839E5E4D338BD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDB94A2C1FB4F5D3935FF285 /* Pods-WWEMobile.debug.xcconfig */,
+				C872BCFE96D86B1E35C2D387 /* Pods-WWEMobile.release.xcconfig */,
+				F3E694B80A9B1722A73EE9EA /* Pods-WWEMobile-WWEMobileTests.debug.xcconfig */,
+				4307E4B0A0F25489A95A7821 /* Pods-WWEMobile-WWEMobileTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26CFC7FF1F4F6DEA00A17AFD /* Build configuration list for PBXNativeTarget "WWEMobile" */;
 			buildPhases = (
+				A1EC9DDBCA1ADE17B11F7601 /* [CP] Check Pods Manifest.lock */,
 				26CFC7DE1F4F6DEA00A17AFD /* Sources */,
 				26CFC7DF1F4F6DEA00A17AFD /* Frameworks */,
 				26CFC7E01F4F6DEA00A17AFD /* Resources */,
+				31F91C69C9DE53E2EAD6C4B8 /* [CP] Embed Pods Frameworks */,
+				FEEFDC5B74FD87DB7999D7AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26CFC8021F4F6DEA00A17AFD /* Build configuration list for PBXNativeTarget "WWEMobileTests" */;
 			buildPhases = (
+				2B2A8482C30AFF083D87AD0B /* [CP] Check Pods Manifest.lock */,
 				26CFC7F21F4F6DEA00A17AFD /* Sources */,
 				26CFC7F31F4F6DEA00A17AFD /* Frameworks */,
 				26CFC7F41F4F6DEA00A17AFD /* Resources */,
+				530BFA3C8E4EC1AC0D1CFA45 /* [CP] Embed Pods Frameworks */,
+				14C2B3EDA6AED89A73FE139B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +304,7 @@
 				TargetAttributes = {
 					26CFC7E11F4F6DEA00A17AFD = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VXBU7JZRFH;
 						ProvisioningStyle = Automatic;
 					};
 					26CFC7F51F4F6DEA00A17AFD = {
@@ -194,12 +353,147 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14C2B3EDA6AED89A73FE139B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWEMobile-WWEMobileTests/Pods-WWEMobile-WWEMobileTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B2A8482C30AFF083D87AD0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WWEMobile-WWEMobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31F91C69C9DE53E2EAD6C4B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WWEMobile/Pods-WWEMobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWEMobile/Pods-WWEMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		530BFA3C8E4EC1AC0D1CFA45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WWEMobile-WWEMobileTests/Pods-WWEMobile-WWEMobileTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWEMobile-WWEMobileTests/Pods-WWEMobile-WWEMobileTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1EC9DDBCA1ADE17B11F7601 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WWEMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEEFDC5B74FD87DB7999D7AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WWEMobile/Pods-WWEMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		26CFC7DE1F4F6DEA00A17AFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26AED44E1F508162000C9BD7 /* WWEVideoTagModel.swift in Sources */,
+				26AED4611F509334000C9BD7 /* WWEVideoManager.swift in Sources */,
+				26AED44B1F508147000C9BD7 /* WWEVideoFormatModel.swift in Sources */,
+				26AED4641F5094DF000C9BD7 /* WWEFeedModel.swift in Sources */,
+				26AED4541F508711000C9BD7 /* NetworkManager.swift in Sources */,
+				26AED4481F508124000C9BD7 /* WWEVideoModel.swift in Sources */,
+				26AED45D1F5090A3000C9BD7 /* DBManager.swift in Sources */,
+				26AED45A1F5088CC000C9BD7 /* WWEConfiguration.swift in Sources */,
 				26CFC7E81F4F6DEA00A17AFD /* ViewController.swift in Sources */,
+				26AED4571F5088AB000C9BD7 /* WWEDefines.swift in Sources */,
+				26AED4691F50961A000C9BD7 /* NetworkService.swift in Sources */,
 				26CFC7E61F4F6DEA00A17AFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +502,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26AED46A1F50961A000C9BD7 /* NetworkService.swift in Sources */,
+				26AED4581F5088AB000C9BD7 /* WWEDefines.swift in Sources */,
+				26AED44F1F508162000C9BD7 /* WWEVideoTagModel.swift in Sources */,
 				26CFC7FB1F4F6DEA00A17AFD /* WWEMobileTests.swift in Sources */,
+				26AED45E1F5090A3000C9BD7 /* DBManager.swift in Sources */,
+				26AED4551F508711000C9BD7 /* NetworkManager.swift in Sources */,
+				26AED4491F508124000C9BD7 /* WWEVideoModel.swift in Sources */,
+				26AED44C1F508147000C9BD7 /* WWEVideoFormatModel.swift in Sources */,
+				26AED4621F509334000C9BD7 /* WWEVideoManager.swift in Sources */,
+				26AED45B1F5088CC000C9BD7 /* WWEConfiguration.swift in Sources */,
+				26AED4651F5094DF000C9BD7 /* WWEFeedModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,9 +641,12 @@
 		};
 		26CFC8001F4F6DEA00A17AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDB94A2C1FB4F5D3935FF285 /* Pods-WWEMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VXBU7JZRFH;
 				INFOPLIST_FILE = WWEMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sparkdigital.WWEMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,9 +656,12 @@
 		};
 		26CFC8011F4F6DEA00A17AFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C872BCFE96D86B1E35C2D387 /* Pods-WWEMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VXBU7JZRFH;
 				INFOPLIST_FILE = WWEMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sparkdigital.WWEMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,8 +671,8 @@
 		};
 		26CFC8031F4F6DEA00A17AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E694B80A9B1722A73EE9EA /* Pods-WWEMobile-WWEMobileTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WWEMobileTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -375,8 +685,8 @@
 		};
 		26CFC8041F4F6DEA00A17AFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4307E4B0A0F25489A95A7821 /* Pods-WWEMobile-WWEMobileTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WWEMobileTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -406,6 +716,7 @@
 				26CFC8011F4F6DEA00A17AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26CFC8021F4F6DEA00A17AFD /* Build configuration list for PBXNativeTarget "WWEMobileTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +725,7 @@
 				26CFC8041F4F6DEA00A17AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
