@@ -24,6 +24,7 @@ public enum attributes: String {
     case mediaID = "media_id"
     case networkContent = "network_content"
     case playbackURL = "playback_url"
+    case seekTime = "seek_time"
     case tags = "tags"
     case thumbnail = "thumb"
     case title = "title"
@@ -32,3 +33,5 @@ public enum attributes: String {
     case videos = "videos"
     case vmsID = "vms_id"
 }
+
+let kVideoFullScreenNotification: String = "VideoFullScreen"

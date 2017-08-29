@@ -21,31 +21,31 @@
         <scene sceneID="Tk2-Ed-Odi">
             <objects>
                 <collectionViewController id="nuQ-2X-ANT" customClass="VideoFeedCollectionViewController" customModule="WWEMobile" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="VxX-Il-SVE">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="VxX-Il-SVE">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AwT-kX-wjd">
-                            <size key="itemSize" width="170" height="170"/>
+                            <size key="itemSize" width="170" height="210"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCell" id="xk5-dY-pGH" customClass="VideoCell" customModule="WWEMobile">
-                                <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vff-2D-dlB" userLabel="Container View">
-                                            <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vtU-Op-dTS" userLabel="Video View">
                                                     <rect key="frame" x="13" y="5" width="144" height="81"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJf-wu-FWE" userLabel="Frame View">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJf-wu-FWE" userLabel="Player View" customClass="PlayerView" customModule="WWEMobile">
                                                             <rect key="frame" x="0.0" y="0.0" width="144" height="81"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </view>
@@ -54,47 +54,60 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybb-tK-kif" userLabel="Duration Label">
-                                                            <rect key="frame" x="8" y="8" width="50" height="18"/>
+                                                            <rect key="frame" x="5" y="5" width="40" height="18"/>
                                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="18" id="H1h-br-kRC"/>
-                                                                <constraint firstAttribute="width" constant="50" id="iQw-Ou-xCP"/>
+                                                                <constraint firstAttribute="width" constant="40" id="iQw-Ou-xCP"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBX-Az-XX2" userLabel="Play Button">
+                                                            <rect key="frame" x="48" y="16" width="48" height="48"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="48" id="Kx1-IC-GmQ"/>
+                                                                <constraint firstAttribute="width" constant="48" id="vHp-BD-AiF"/>
+                                                            </constraints>
+                                                            <state key="normal" image="play"/>
+                                                            <connections>
+                                                                <action selector="playTapped:" destination="xk5-dY-pGH" eventType="touchUpInside" id="Lz0-lu-0RN"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="144" id="1Sk-Wb-RFh"/>
-                                                        <constraint firstItem="Ybb-tK-kif" firstAttribute="leading" secondItem="vtU-Op-dTS" secondAttribute="leading" constant="8" id="9mx-74-iGH"/>
+                                                        <constraint firstItem="Ybb-tK-kif" firstAttribute="leading" secondItem="vtU-Op-dTS" secondAttribute="leading" constant="5" id="9mx-74-iGH"/>
                                                         <constraint firstItem="zJf-wu-FWE" firstAttribute="centerY" secondItem="vtU-Op-dTS" secondAttribute="centerY" id="AVW-MN-0Dj"/>
                                                         <constraint firstItem="zJf-wu-FWE" firstAttribute="centerX" secondItem="vtU-Op-dTS" secondAttribute="centerX" id="CYg-5w-St0"/>
+                                                        <constraint firstItem="uBX-Az-XX2" firstAttribute="centerY" secondItem="vtU-Op-dTS" secondAttribute="centerY" id="KCF-bx-42V"/>
+                                                        <constraint firstItem="uBX-Az-XX2" firstAttribute="centerX" secondItem="vtU-Op-dTS" secondAttribute="centerX" id="NnF-ff-nIu"/>
                                                         <constraint firstAttribute="height" constant="81" id="SXd-ki-MEh"/>
                                                         <constraint firstItem="zJf-wu-FWE" firstAttribute="width" secondItem="vtU-Op-dTS" secondAttribute="width" id="rj6-Sl-p3U"/>
-                                                        <constraint firstItem="Ybb-tK-kif" firstAttribute="top" secondItem="vtU-Op-dTS" secondAttribute="top" constant="8" id="t4s-Gb-3pQ"/>
+                                                        <constraint firstItem="Ybb-tK-kif" firstAttribute="top" secondItem="vtU-Op-dTS" secondAttribute="top" constant="5" id="t4s-Gb-3pQ"/>
                                                         <constraint firstItem="zJf-wu-FWE" firstAttribute="height" secondItem="vtU-Op-dTS" secondAttribute="height" id="zXf-u9-Lq8"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5T-vW-bR6" userLabel="Date Label">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5T-vW-bR6" userLabel="Date Label">
                                                     <rect key="frame" x="13" y="91" width="144" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="144" id="CCD-UN-BWe"/>
                                                         <constraint firstAttribute="height" constant="14" id="QI6-p9-qds"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
+                                                    <color key="textColor" red="0.84313725490196079" green="0.094117647058823528" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To integrate AlamofireImage into your Xco" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNs-Sj-pb0" userLabel="Description Label">
-                                                    <rect key="frame" x="13" y="110" width="144" height="55"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNs-Sj-pb0" userLabel="Description Label">
+                                                    <rect key="frame" x="13" y="110" width="144" height="95"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="55" id="YN0-4h-LEY"/>
+                                                        <constraint firstAttribute="height" constant="95" id="YN0-4h-LEY"/>
                                                         <constraint firstAttribute="width" constant="144" id="yxE-xX-cL0"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -119,13 +132,14 @@
                                     <constraint firstItem="vff-2D-dlB" firstAttribute="width" secondItem="xk5-dY-pGH" secondAttribute="width" id="Jlp-ro-Dem"/>
                                     <constraint firstItem="vff-2D-dlB" firstAttribute="centerY" secondItem="xk5-dY-pGH" secondAttribute="centerY" id="iEh-QA-aTi"/>
                                 </constraints>
-                                <size key="customSize" width="170" height="170"/>
+                                <size key="customSize" width="170" height="210"/>
                                 <connections>
                                     <outlet property="containerView" destination="vff-2D-dlB" id="Rul-U1-1xl"/>
-                                    <outlet property="frameView" destination="zJf-wu-FWE" id="TEh-OI-d8m"/>
+                                    <outlet property="playerView" destination="zJf-wu-FWE" id="FAr-SY-qo9"/>
                                     <outlet property="videoDate" destination="J5T-vW-bR6" id="J6w-mR-bcg"/>
                                     <outlet property="videoDescription" destination="DNs-Sj-pb0" id="Odi-eA-ecz"/>
                                     <outlet property="videoDuration" destination="Ybb-tK-kif" id="F5b-bo-Uli"/>
+                                    <outlet property="videoPlayButton" destination="uBX-Az-XX2" id="N8E-Tw-ofc"/>
                                     <outlet property="videoThumbnail" destination="NiO-NK-mn1" id="nmG-13-8bS"/>
                                     <outlet property="videoView" destination="vtU-Op-dTS" id="pJo-od-xmE"/>
                                 </connections>
@@ -147,7 +161,7 @@
             <objects>
                 <navigationController id="wdr-KI-SjT" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="cvj-YU-rzE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="cvj-YU-rzE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -161,4 +175,7 @@
             <point key="canvasLocation" x="-500" y="107"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="play" width="48" height="48"/>
+    </resources>
 </document>

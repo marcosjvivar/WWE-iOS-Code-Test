@@ -1,0 +1,29 @@
+{
+      "id": 40029883,
+      "title": "What has Serena Deeb been up to since you last saw her?",
+      "type": "video",
+      "date": 1503597600,
+      "duration": 104,
+      "vms_id": 70988,
+      "media_id": "pkyslyCG",
+      "brightcove_id": "999999999",
+      "playback_url": "//vod.wwe.com/vod/2017/,1080,720,540,432,360,288,/myc_serenadeeb_profile.m3u8",
+      "thumb": "/f//2017/08/20170823_video_deeb--ae86f8ba04d93d281f2cf46a295247ce.jpg",
+      "formats": {
+        "flv_rtmp_rtmpe": 0,
+        "h264_mp4_rtmp": 0,
+        "h264_mp4_http": 4,
+        "h264_m2ts_http": 0
+      },
+      "body": "<p>One familiar face in the Mae Young Classic is former SmackDown Superstar Serena Deeb. Find out how the onetime member of the Straight Edge Society has kept busy since last competing in WWE.</p>",
+      "icon": 0,
+      "network_content": 0,
+      "url": "/videos/what-has-serena-deeb-been-up-to-since-you-last-saw-her",
+      "tags": [
+        {
+          "id": 40024772,
+          "type": "show",
+          "title": "Mae Young Classic"
+        }
+      ]
+}

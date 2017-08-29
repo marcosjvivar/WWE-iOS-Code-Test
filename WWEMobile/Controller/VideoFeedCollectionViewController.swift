@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 private let reuseIdentifier = "VideoCell"
 
@@ -24,10 +26,7 @@ class VideoFeedCollectionViewController: UICollectionViewController {
         
         getVideos()
         
-        // Register cell classes
-        //self.collectionView!.register(VideoCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(playTapped(notification:)), name:NSNotification.Name(rawValue: kVideoFullScreenNotification), object: nil)
     }
     
     // MARK: - Private Methods
@@ -54,17 +53,30 @@ class VideoFeedCollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    // MARK: - Notifications
+    
+    func playTapped(notification: Notification) {
+        
+        let videoDictionary = notification.userInfo
+        
+        let playbackURL = videoDictionary?[attributes.playbackURL.rawValue] as! String
+        let videoURL = URL.init(string: playbackURL)
+        let asset = AVURLAsset(url: videoURL!, options: nil)
+        
+        let item = AVPlayerItem.init(asset: asset, automaticallyLoadedAssetKeys: ["playable"])
+        
+        let playbackTime = videoDictionary?[attributes.seekTime.rawValue] as! Double
+        let currentTime = CMTime.init(seconds: playbackTime, preferredTimescale: 1)
+        
+        let fullScreenPlayer = AVPlayer.init(playerItem: item)
+        fullScreenPlayer.seek(to: currentTime)
+        
+        let fullScreenPlayerViewController = AVPlayerViewController()
+        fullScreenPlayerViewController.player = fullScreenPlayer
+        fullScreenPlayerViewController.player?.play()
+        
+        self.present(fullScreenPlayerViewController, animated: true, completion: nil)
     }
-    */
-
-    // MARK: UICollectionViewDataSource
 
     // MARK: UICollectionViewDataSource
     
