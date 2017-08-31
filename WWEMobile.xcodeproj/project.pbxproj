@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		265CE9EA1F589B51001823B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265CE9E81F589B51001823B9 /* LoginViewController.swift */; };
+		265CE9F11F58A296001823B9 /* WWESessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265CE9F01F58A296001823B9 /* WWESessionManager.swift */; };
+		265CE9F51F58AAD7001823B9 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265CE9F41F58AAD7001823B9 /* KeychainPasswordItem.swift */; };
 		26AED4481F508124000C9BD7 /* WWEVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4471F508124000C9BD7 /* WWEVideoModel.swift */; };
 		26AED4491F508124000C9BD7 /* WWEVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4471F508124000C9BD7 /* WWEVideoModel.swift */; };
 		26AED44B1F508147000C9BD7 /* WWEVideoFormatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44A1F508147000C9BD7 /* WWEVideoFormatModel.swift */; };
@@ -68,18 +71,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		265CE9E81F589B51001823B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "Controller/Login Screen/LoginViewController.swift"; sourceTree = "<group>"; };
+		265CE9F01F58A296001823B9 /* WWESessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWESessionManager.swift; path = Service/Session/WWESessionManager.swift; sourceTree = "<group>"; };
+		265CE9F41F58AAD7001823B9 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainPasswordItem.swift; path = "Third Party/Keychain Password Item/KeychainPasswordItem.swift"; sourceTree = "<group>"; };
 		26AED4471F508124000C9BD7 /* WWEVideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoModel.swift; path = Model/WWEVideoModel.swift; sourceTree = "<group>"; };
 		26AED44A1F508147000C9BD7 /* WWEVideoFormatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoFormatModel.swift; path = Model/WWEVideoFormatModel.swift; sourceTree = "<group>"; };
 		26AED44D1F508162000C9BD7 /* WWEVideoTagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoTagModel.swift; path = Model/WWEVideoTagModel.swift; sourceTree = "<group>"; };
-		26AED4531F508711000C9BD7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Service/NetworkManager.swift; sourceTree = "<group>"; };
+		26AED4531F508711000C9BD7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Service/Network/NetworkManager.swift; sourceTree = "<group>"; };
 		26AED4561F5088AB000C9BD7 /* WWEDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEDefines.swift; path = Resource/WWEDefines.swift; sourceTree = "<group>"; };
 		26AED4591F5088CC000C9BD7 /* WWEConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEConfiguration.swift; path = Resource/WWEConfiguration.swift; sourceTree = "<group>"; };
-		26AED45C1F5090A3000C9BD7 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = Service/DBManager.swift; sourceTree = "<group>"; };
+		26AED45C1F5090A3000C9BD7 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = Service/DB/DBManager.swift; sourceTree = "<group>"; };
 		26AED4601F509334000C9BD7 /* WWEVideoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoManager.swift; path = "Service/Video Manager/WWEVideoManager.swift"; sourceTree = "<group>"; };
 		26AED4631F5094DF000C9BD7 /* WWEFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEFeedModel.swift; path = Model/WWEFeedModel.swift; sourceTree = "<group>"; };
 		26AED4681F50961A000C9BD7 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = Service/Network/NetworkService.swift; sourceTree = "<group>"; };
 		26AED46B1F50A963000C9BD7 /* VideosDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideosDataSource.swift; path = "Data Source/VideosDataSource.swift"; sourceTree = "<group>"; };
-		26AED46D1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoFeedCollectionViewController.swift; path = Controller/VideoFeedCollectionViewController.swift; sourceTree = "<group>"; };
+		26AED46D1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoFeedCollectionViewController.swift; path = "Controller/Video Feed/VideoFeedCollectionViewController.swift"; sourceTree = "<group>"; };
 		26AED4711F50AEEA000C9BD7 /* wwe-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "wwe-logo.png"; path = "Resource/wwe-logo.png"; sourceTree = "<group>"; };
 		26AED4741F50B004000C9BD7 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCell.swift; path = UI/Cell/VideoCell.swift; sourceTree = "<group>"; };
 		26AED4931F50CFB4000C9BD7 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE.txt; path = Resource/Roboto/LICENSE.txt; sourceTree = "<group>"; };
@@ -136,6 +142,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		265CE9E61F589B18001823B9 /* Video Feed */ = {
+			isa = PBXGroup;
+			children = (
+				26AED46D1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift */,
+			);
+			name = "Video Feed";
+			sourceTree = "<group>";
+		};
+		265CE9E71F589B1F001823B9 /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				265CE9E81F589B51001823B9 /* LoginViewController.swift */,
+			);
+			name = "Login Screen";
+			sourceTree = "<group>";
+		};
+		265CE9EF1F58A250001823B9 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				265CE9F01F58A296001823B9 /* WWESessionManager.swift */,
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
+		265CE9F21F58A821001823B9 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				265CE9F31F58A831001823B9 /* Keychain Password Item */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		265CE9F31F58A831001823B9 /* Keychain Password Item */ = {
+			isa = PBXGroup;
+			children = (
+				265CE9F41F58AAD7001823B9 /* KeychainPasswordItem.swift */,
+			);
+			name = "Keychain Password Item";
+			sourceTree = "<group>";
+		};
 		26AED4431F507F2B000C9BD7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,7 +196,8 @@
 		26AED4441F507F30000C9BD7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				26AED46D1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift */,
+				265CE9E71F589B1F001823B9 /* Login Screen */,
+				265CE9E61F589B18001823B9 /* Video Feed */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +216,7 @@
 		26AED4461F507F3B000C9BD7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				265CE9EF1F58A250001823B9 /* Session */,
 				26AED45F1F509301000C9BD7 /* Video */,
 				26AED4671F509570000C9BD7 /* Networking */,
 				26AED4661F509566000C9BD7 /* DB */,
@@ -303,6 +351,7 @@
 				26AED4501F508169000C9BD7 /* Protocols */,
 				26AED4521F5081A2000C9BD7 /* Resources */,
 				26AED4461F507F3B000C9BD7 /* Services */,
+				265CE9F21F58A821001823B9 /* Third Party */,
 				26AED4451F507F36000C9BD7 /* UI */,
 			);
 			path = WWEMobile;
@@ -595,10 +644,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265CE9F11F58A296001823B9 /* WWESessionManager.swift in Sources */,
 				26AED44E1F508162000C9BD7 /* WWEVideoTagModel.swift in Sources */,
 				26AED4611F509334000C9BD7 /* WWEVideoManager.swift in Sources */,
 				26AED46C1F50A963000C9BD7 /* VideosDataSource.swift in Sources */,
 				26AED4B11F550EC5000C9BD7 /* PlayerView.swift in Sources */,
+				265CE9F51F58AAD7001823B9 /* KeychainPasswordItem.swift in Sources */,
 				26AED44B1F508147000C9BD7 /* WWEVideoFormatModel.swift in Sources */,
 				26AED4641F5094DF000C9BD7 /* WWEFeedModel.swift in Sources */,
 				26AED4751F50B004000C9BD7 /* VideoCell.swift in Sources */,
@@ -607,6 +658,7 @@
 				26AED45D1F5090A3000C9BD7 /* DBManager.swift in Sources */,
 				26AED46E1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift in Sources */,
 				26AED45A1F5088CC000C9BD7 /* WWEConfiguration.swift in Sources */,
+				265CE9EA1F589B51001823B9 /* LoginViewController.swift in Sources */,
 				26AED4571F5088AB000C9BD7 /* WWEDefines.swift in Sources */,
 				26AED4691F50961A000C9BD7 /* NetworkService.swift in Sources */,
 				26CFC7E61F4F6DEA00A17AFD /* AppDelegate.swift in Sources */,

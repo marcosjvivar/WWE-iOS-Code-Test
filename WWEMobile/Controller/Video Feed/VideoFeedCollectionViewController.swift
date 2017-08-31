@@ -29,7 +29,33 @@ class VideoFeedCollectionViewController: UICollectionViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(playTapped(notification:)), name:NSNotification.Name(rawValue: kVideoFullScreenNotification), object: nil)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        
+        if !WWESessionManager.sharedInstance.hasValidSession() {
+            showLoginScreen()
+        }
+        else
+        {
+            let logoutButton = UIBarButtonItem(image: UIImage.init(named: "logout"), style: .plain, target: self, action: #selector(logout))
+            navigationItem.rightBarButtonItem = logoutButton
+        }
+    }
+    
     // MARK: - Private Methods
+    
+    func showLoginScreen() {
+        
+        performSegue(withIdentifier: "loginScreen", sender: self)
+    }
+    
+    func logout() {
+        
+        navigationItem.rightBarButtonItem = nil
+        UserDefaults.standard.set(false, forKey: "hasValidSession")
+        showLoginScreen()
+    }
     
     func getVideos() {
         videosDataSource.getVideos(completionHandler: { (wweFeed, error) in
