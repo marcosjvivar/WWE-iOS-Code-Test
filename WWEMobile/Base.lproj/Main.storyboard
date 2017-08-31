@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -151,10 +152,102 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="WWE Mobile" id="ghX-K5-4Aq"/>
+                    <connections>
+                        <segue destination="rdG-rV-OAw" kind="presentation" identifier="loginScreen" id="9zu-0m-OyR"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tQ-kt-Krw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="412" y="107"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="y5S-Xk-1zN">
+            <objects>
+                <viewController id="rdG-rV-OAw" customClass="LoginViewController" customModule="WWEMobile" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RuD-du-Ghd"/>
+                        <viewControllerLayoutGuide type="bottom" id="cwM-VH-4c5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="atY-PX-NYg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wwe-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="3va-5o-mOs" userLabel="WWE Logo">
+                                <rect key="frame" x="112" y="28" width="150" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="3wX-4M-8mz"/>
+                                    <constraint firstAttribute="height" constant="138" id="QFn-Pk-nzC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WWE Mobile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glB-i1-mEq" userLabel="WWE Mobile Label">
+                                <rect key="frame" x="112" y="174" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="mRj-76-Vik"/>
+                                    <constraint firstAttribute="height" constant="30" id="tLW-ET-yg0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cbs-YK-73D" userLabel="Username Textfield">
+                                <rect key="frame" x="16" y="241" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fkV-Od-RXS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L9k-vX-N22" userLabel="Password Textfield">
+                                <rect key="frame" x="16" y="286" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8nN-Yl-KAN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNm-mK-mjx" userLabel="Login Button">
+                                <rect key="frame" x="112" y="324" width="150" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="1rU-7q-w5W"/>
+                                    <constraint firstAttribute="width" constant="150" id="tsY-zv-NQB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="rdG-rV-OAw" eventType="touchUpInside" id="xWd-yc-K8H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3va-5o-mOs" firstAttribute="top" secondItem="RuD-du-Ghd" secondAttribute="bottom" constant="8" id="2b5-3g-rfV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Cbs-YK-73D" secondAttribute="leading" id="5hb-Ix-fGc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cbs-YK-73D" secondAttribute="trailing" id="Ipk-57-Abz"/>
+                            <constraint firstItem="glB-i1-mEq" firstAttribute="centerX" secondItem="atY-PX-NYg" secondAttribute="centerX" id="arO-7Y-g5l"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="L9k-vX-N22" secondAttribute="leading" id="cro-rD-Ts4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L9k-vX-N22" secondAttribute="trailing" id="eQs-Q9-NGP"/>
+                            <constraint firstItem="L9k-vX-N22" firstAttribute="top" secondItem="Cbs-YK-73D" secondAttribute="bottom" constant="15" id="j7V-NO-Hqs"/>
+                            <constraint firstItem="Cbs-YK-73D" firstAttribute="top" secondItem="glB-i1-mEq" secondAttribute="bottom" constant="37" id="k1F-cW-s0I"/>
+                            <constraint firstItem="glB-i1-mEq" firstAttribute="top" secondItem="3va-5o-mOs" secondAttribute="bottom" constant="8" id="lbD-Gf-b6h"/>
+                            <constraint firstItem="hNm-mK-mjx" firstAttribute="top" secondItem="L9k-vX-N22" secondAttribute="bottom" constant="8" id="t6z-zX-Noq"/>
+                            <constraint firstItem="hNm-mK-mjx" firstAttribute="centerX" secondItem="atY-PX-NYg" secondAttribute="centerX" id="u0Z-SS-0ao"/>
+                            <constraint firstItem="3va-5o-mOs" firstAttribute="centerX" secondItem="atY-PX-NYg" secondAttribute="centerX" id="uYz-WM-hE8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="hNm-mK-mjx" id="jM9-DD-StR"/>
+                        <outlet property="passwordTextfield" destination="L9k-vX-N22" id="lO8-AT-0cy"/>
+                        <outlet property="usernameTextfield" destination="Cbs-YK-73D" id="csA-En-lWF"/>
+                        <outlet property="wweLogoImageView" destination="3va-5o-mOs" id="uXB-kK-94n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adc-1G-10f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="107"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zTG-zD-KvE">
@@ -165,6 +258,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="nuQ-2X-ANT" kind="relationship" relationship="rootViewController" id="cJK-VR-QY0"/>
@@ -177,5 +271,6 @@
     </scenes>
     <resources>
         <image name="play" width="48" height="48"/>
+        <image name="wwe-logo.png" width="150" height="138"/>
     </resources>
 </document>

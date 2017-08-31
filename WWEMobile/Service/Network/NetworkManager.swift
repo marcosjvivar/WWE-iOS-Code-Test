@@ -21,7 +21,7 @@ open class NetworkManager: NSObject {
     
     override init() {}
     
-    // MARK: - Movies
+    // MARK: - Videos
     
     public func getVideos(completionHandler completion: @escaping (WWEFeedModel?, NSError?) -> ()) {
         videoManager.getVideos { (wweFeed, error) in
