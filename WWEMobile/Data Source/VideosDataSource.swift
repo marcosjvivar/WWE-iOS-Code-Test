@@ -15,10 +15,31 @@ open class VideosDataSource: NSObject
         super.init()
     }
     
-    public func getVideos(completionHandler completion: @escaping (WWEFeedModel?, NSError?) -> ())
+    func getVideos(completionHandler completion: @escaping (WWEFeed?, NSError?) -> ())
     {
+        let feed = WWEFeed()
+        
+        feed.videos = DBManager.sharedInstance.getRecents()!
+        
         NetworkManager.sharedInstance.getVideos(completionHandler: { (wweFeed, error) in
-            completion(wweFeed, error)
+            
+            let newestVideo = wweFeed?.videos.first
+            
+            if feed.videos.count == 20 {
+                
+                let lastSavedVideo = feed.videos.first
+                
+                if lastSavedVideo?.videoID == newestVideo?.videoID
+                {
+                    completion(feed, nil)
+                }
+            }
+            else
+            {
+                DBManager.sharedInstance.addRecents(wweFeed!)
+                
+                completion(wweFeed, error)
+            }
         })
     }
 }

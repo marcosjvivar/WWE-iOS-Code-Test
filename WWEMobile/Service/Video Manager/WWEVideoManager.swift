@@ -22,13 +22,13 @@ open class WWEVideoManager: NSObject {
     
     // MARK: - Public
     
-    public func getVideos(completionHandler completion: @escaping (WWEFeedModel?, NSError?) -> ()) {
+    func getVideos(completionHandler completion: @escaping (WWEFeed?, NSError?) -> ()) {
         let videosURLString: String = "\(WWE_BASE_URL)\(FEED_ENDPOINT)"
         
         NetworkService.performRequest(urlString: videosURLString) { (json, error) in
             
             if (json != nil) {
-                let wweFeed = WWEFeedModel.init(json: json!)
+                let wweFeed = WWEFeed.create(json: json!)
                 
                 completion(wweFeed, nil)
             }

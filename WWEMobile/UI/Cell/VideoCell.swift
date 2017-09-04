@@ -15,7 +15,7 @@ private var videoCellKVOContext = 0
 
 open class VideoCell: UICollectionViewCell {
     
-    public var wweVideo: WWEVideoModel!
+    var wweVideo: WWEVideo!
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var videoView: UIView!
@@ -28,6 +28,9 @@ open class VideoCell: UICollectionViewCell {
     @IBOutlet weak var videoDescription: UILabel!
     
     @IBOutlet weak var videoPlayButton: UIButton!
+    
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var dislikeButton: UIButton!
     
     var asset: AVURLAsset? {
         didSet {
@@ -108,6 +111,9 @@ open class VideoCell: UICollectionViewCell {
         
         self.videoDescription?.text = escapedDescription
         
+        self.likeButton.setImage(UIImage.init(named: self.wweVideo.isLiked ? "like-on" : "like-off"), for: .normal)
+        self.dislikeButton.setImage(UIImage.init(named: self.wweVideo.isDisliked ? "dislike-on" : "dislike-off"), for: .normal)
+        
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: self.player.currentItem, queue: nil, using: { (_) in
             DispatchQueue.main.async {
                 self.player.seek(to: kCMTimeZero)
@@ -183,6 +189,8 @@ open class VideoCell: UICollectionViewCell {
             let hasValidDuration = newDuration.isNumeric && newDuration.value != 0
             let newDurationSeconds = hasValidDuration ? CMTimeGetSeconds(newDuration) : 0.0
             let newCurrentTime = hasValidDuration ? Float(CMTimeGetSeconds(player.currentTime())) : 0.0
+            
+            print("VideoCell.player.currentItem has newDurationSeconds(\(newDurationSeconds)) and newCurrentTime(\(newCurrentTime))")
         }
         else if keyPath == #keyPath(VideoCell.player.currentItem.status) {
 
@@ -211,5 +219,34 @@ open class VideoCell: UICollectionViewCell {
         ] as [String : Any]
         
         NotificationCenter.default.post(name: Notification.Name(rawValue: kVideoFullScreenNotification), object: nil, userInfo: videoDictionary)
+    }
+    
+    @IBAction func likeTapped(_ sender: UIButton) {
+        
+        if (self.wweVideo.isLiked)
+        {
+            DBManager.sharedInstance.updateRecent(self.wweVideo, isLiked: false, isDisliked: self.wweVideo.isDisliked)
+            sender.setImage(UIImage.init(named: "like-off"), for: .normal)
+        }
+        else
+        {
+            DBManager.sharedInstance.updateRecent(self.wweVideo, isLiked: true, isDisliked: self.wweVideo.isDisliked)
+            sender.setImage(UIImage.init(named: "like-on"), for: .normal)
+        }
+    }
+    
+    @IBAction func dislikeTapped(_ sender: UIButton) {
+        
+        if (self.wweVideo.isDisliked)
+        {
+            DBManager.sharedInstance.updateRecent(self.wweVideo, isLiked: self.wweVideo.isLiked, isDisliked: false)
+            sender.setImage(UIImage.init(named: "dislike-off"), for: .normal)
+        }
+        else
+        {
+            DBManager.sharedInstance.updateRecent(self.wweVideo, isLiked: self.wweVideo.isLiked, isDisliked: true)
+            sender.setImage(UIImage.init(named: "dislike-on"), for: .normal)
+        }
+        
     }
 }

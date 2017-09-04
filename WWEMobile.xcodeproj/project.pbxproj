@@ -10,12 +10,13 @@
 		265CE9EA1F589B51001823B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265CE9E81F589B51001823B9 /* LoginViewController.swift */; };
 		265CE9F11F58A296001823B9 /* WWESessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265CE9F01F58A296001823B9 /* WWESessionManager.swift */; };
 		265CE9F51F58AAD7001823B9 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265CE9F41F58AAD7001823B9 /* KeychainPasswordItem.swift */; };
-		26AED4481F508124000C9BD7 /* WWEVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4471F508124000C9BD7 /* WWEVideoModel.swift */; };
-		26AED4491F508124000C9BD7 /* WWEVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4471F508124000C9BD7 /* WWEVideoModel.swift */; };
-		26AED44B1F508147000C9BD7 /* WWEVideoFormatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44A1F508147000C9BD7 /* WWEVideoFormatModel.swift */; };
-		26AED44C1F508147000C9BD7 /* WWEVideoFormatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44A1F508147000C9BD7 /* WWEVideoFormatModel.swift */; };
-		26AED44E1F508162000C9BD7 /* WWEVideoTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44D1F508162000C9BD7 /* WWEVideoTagModel.swift */; };
-		26AED44F1F508162000C9BD7 /* WWEVideoTagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44D1F508162000C9BD7 /* WWEVideoTagModel.swift */; };
+		26722F6B1F59EFD2003B641E /* WWEUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26722F6A1F59EFD2003B641E /* WWEUser.swift */; };
+		26AED4481F508124000C9BD7 /* WWEVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4471F508124000C9BD7 /* WWEVideo.swift */; };
+		26AED4491F508124000C9BD7 /* WWEVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4471F508124000C9BD7 /* WWEVideo.swift */; };
+		26AED44B1F508147000C9BD7 /* WWEVideoFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44A1F508147000C9BD7 /* WWEVideoFormat.swift */; };
+		26AED44C1F508147000C9BD7 /* WWEVideoFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44A1F508147000C9BD7 /* WWEVideoFormat.swift */; };
+		26AED44E1F508162000C9BD7 /* WWEVideoTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44D1F508162000C9BD7 /* WWEVideoTag.swift */; };
+		26AED44F1F508162000C9BD7 /* WWEVideoTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED44D1F508162000C9BD7 /* WWEVideoTag.swift */; };
 		26AED4541F508711000C9BD7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4531F508711000C9BD7 /* NetworkManager.swift */; };
 		26AED4551F508711000C9BD7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4531F508711000C9BD7 /* NetworkManager.swift */; };
 		26AED4571F5088AB000C9BD7 /* WWEDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4561F5088AB000C9BD7 /* WWEDefines.swift */; };
@@ -26,8 +27,8 @@
 		26AED45E1F5090A3000C9BD7 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED45C1F5090A3000C9BD7 /* DBManager.swift */; };
 		26AED4611F509334000C9BD7 /* WWEVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4601F509334000C9BD7 /* WWEVideoManager.swift */; };
 		26AED4621F509334000C9BD7 /* WWEVideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4601F509334000C9BD7 /* WWEVideoManager.swift */; };
-		26AED4641F5094DF000C9BD7 /* WWEFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4631F5094DF000C9BD7 /* WWEFeedModel.swift */; };
-		26AED4651F5094DF000C9BD7 /* WWEFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4631F5094DF000C9BD7 /* WWEFeedModel.swift */; };
+		26AED4641F5094DF000C9BD7 /* WWEFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4631F5094DF000C9BD7 /* WWEFeed.swift */; };
+		26AED4651F5094DF000C9BD7 /* WWEFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4631F5094DF000C9BD7 /* WWEFeed.swift */; };
 		26AED4691F50961A000C9BD7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4681F50961A000C9BD7 /* NetworkService.swift */; };
 		26AED46A1F50961A000C9BD7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED4681F50961A000C9BD7 /* NetworkService.swift */; };
 		26AED46C1F50A963000C9BD7 /* VideosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AED46B1F50A963000C9BD7 /* VideosDataSource.swift */; };
@@ -74,15 +75,16 @@
 		265CE9E81F589B51001823B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "Controller/Login Screen/LoginViewController.swift"; sourceTree = "<group>"; };
 		265CE9F01F58A296001823B9 /* WWESessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWESessionManager.swift; path = Service/Session/WWESessionManager.swift; sourceTree = "<group>"; };
 		265CE9F41F58AAD7001823B9 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainPasswordItem.swift; path = "Third Party/Keychain Password Item/KeychainPasswordItem.swift"; sourceTree = "<group>"; };
-		26AED4471F508124000C9BD7 /* WWEVideoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoModel.swift; path = Model/WWEVideoModel.swift; sourceTree = "<group>"; };
-		26AED44A1F508147000C9BD7 /* WWEVideoFormatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoFormatModel.swift; path = Model/WWEVideoFormatModel.swift; sourceTree = "<group>"; };
-		26AED44D1F508162000C9BD7 /* WWEVideoTagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoTagModel.swift; path = Model/WWEVideoTagModel.swift; sourceTree = "<group>"; };
+		26722F6A1F59EFD2003B641E /* WWEUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEUser.swift; path = Model/Application/User/WWEUser.swift; sourceTree = "<group>"; };
+		26AED4471F508124000C9BD7 /* WWEVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideo.swift; path = Model/Application/Video/WWEVideo.swift; sourceTree = "<group>"; };
+		26AED44A1F508147000C9BD7 /* WWEVideoFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoFormat.swift; path = Model/Application/Video/WWEVideoFormat.swift; sourceTree = "<group>"; };
+		26AED44D1F508162000C9BD7 /* WWEVideoTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoTag.swift; path = Model/Application/Video/WWEVideoTag.swift; sourceTree = "<group>"; };
 		26AED4531F508711000C9BD7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Service/Network/NetworkManager.swift; sourceTree = "<group>"; };
 		26AED4561F5088AB000C9BD7 /* WWEDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEDefines.swift; path = Resource/WWEDefines.swift; sourceTree = "<group>"; };
 		26AED4591F5088CC000C9BD7 /* WWEConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEConfiguration.swift; path = Resource/WWEConfiguration.swift; sourceTree = "<group>"; };
 		26AED45C1F5090A3000C9BD7 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DBManager.swift; path = Service/DB/DBManager.swift; sourceTree = "<group>"; };
 		26AED4601F509334000C9BD7 /* WWEVideoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEVideoManager.swift; path = "Service/Video Manager/WWEVideoManager.swift"; sourceTree = "<group>"; };
-		26AED4631F5094DF000C9BD7 /* WWEFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEFeedModel.swift; path = Model/WWEFeedModel.swift; sourceTree = "<group>"; };
+		26AED4631F5094DF000C9BD7 /* WWEFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WWEFeed.swift; path = Model/Application/Feed/WWEFeed.swift; sourceTree = "<group>"; };
 		26AED4681F50961A000C9BD7 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = Service/Network/NetworkService.swift; sourceTree = "<group>"; };
 		26AED46B1F50A963000C9BD7 /* VideosDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideosDataSource.swift; path = "Data Source/VideosDataSource.swift"; sourceTree = "<group>"; };
 		26AED46D1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoFeedCollectionViewController.swift; path = "Controller/Video Feed/VideoFeedCollectionViewController.swift"; sourceTree = "<group>"; };
@@ -182,13 +184,46 @@
 			name = "Keychain Password Item";
 			sourceTree = "<group>";
 		};
+		26722F651F59C116003B641E /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				26AED4631F5094DF000C9BD7 /* WWEFeed.swift */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		26722F661F59C12B003B641E /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				26AED44A1F508147000C9BD7 /* WWEVideoFormat.swift */,
+				26AED4471F508124000C9BD7 /* WWEVideo.swift */,
+				26AED44D1F508162000C9BD7 /* WWEVideoTag.swift */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		26722F691F59EFB5003B641E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				26722F6A1F59EFD2003B641E /* WWEUser.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		26722F6D1F5D9E37003B641E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				26722F651F59C116003B641E /* Feed */,
+				26722F691F59EFB5003B641E /* User */,
+				26722F661F59C12B003B641E /* Video */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
 		26AED4431F507F2B000C9BD7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				26AED4631F5094DF000C9BD7 /* WWEFeedModel.swift */,
-				26AED44A1F508147000C9BD7 /* WWEVideoFormatModel.swift */,
-				26AED4471F508124000C9BD7 /* WWEVideoModel.swift */,
-				26AED44D1F508162000C9BD7 /* WWEVideoTagModel.swift */,
+				26722F6D1F5D9E37003B641E /* Application */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -645,16 +680,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				265CE9F11F58A296001823B9 /* WWESessionManager.swift in Sources */,
-				26AED44E1F508162000C9BD7 /* WWEVideoTagModel.swift in Sources */,
+				26AED44E1F508162000C9BD7 /* WWEVideoTag.swift in Sources */,
 				26AED4611F509334000C9BD7 /* WWEVideoManager.swift in Sources */,
 				26AED46C1F50A963000C9BD7 /* VideosDataSource.swift in Sources */,
 				26AED4B11F550EC5000C9BD7 /* PlayerView.swift in Sources */,
 				265CE9F51F58AAD7001823B9 /* KeychainPasswordItem.swift in Sources */,
-				26AED44B1F508147000C9BD7 /* WWEVideoFormatModel.swift in Sources */,
-				26AED4641F5094DF000C9BD7 /* WWEFeedModel.swift in Sources */,
+				26AED44B1F508147000C9BD7 /* WWEVideoFormat.swift in Sources */,
+				26AED4641F5094DF000C9BD7 /* WWEFeed.swift in Sources */,
 				26AED4751F50B004000C9BD7 /* VideoCell.swift in Sources */,
 				26AED4541F508711000C9BD7 /* NetworkManager.swift in Sources */,
-				26AED4481F508124000C9BD7 /* WWEVideoModel.swift in Sources */,
+				26AED4481F508124000C9BD7 /* WWEVideo.swift in Sources */,
+				26722F6B1F59EFD2003B641E /* WWEUser.swift in Sources */,
 				26AED45D1F5090A3000C9BD7 /* DBManager.swift in Sources */,
 				26AED46E1F50AA66000C9BD7 /* VideoFeedCollectionViewController.swift in Sources */,
 				26AED45A1F5088CC000C9BD7 /* WWEConfiguration.swift in Sources */,
@@ -672,15 +708,15 @@
 				26AED4AE1F54B81E000C9BD7 /* NetworkManagerTest.swift in Sources */,
 				26AED46A1F50961A000C9BD7 /* NetworkService.swift in Sources */,
 				26AED4581F5088AB000C9BD7 /* WWEDefines.swift in Sources */,
-				26AED44F1F508162000C9BD7 /* WWEVideoTagModel.swift in Sources */,
+				26AED44F1F508162000C9BD7 /* WWEVideoTag.swift in Sources */,
 				26AED45E1F5090A3000C9BD7 /* DBManager.swift in Sources */,
 				26AED4551F508711000C9BD7 /* NetworkManager.swift in Sources */,
-				26AED4491F508124000C9BD7 /* WWEVideoModel.swift in Sources */,
+				26AED4491F508124000C9BD7 /* WWEVideo.swift in Sources */,
 				26AED4B31F5531FF000C9BD7 /* WWEVideoModelTest.swift in Sources */,
-				26AED44C1F508147000C9BD7 /* WWEVideoFormatModel.swift in Sources */,
+				26AED44C1F508147000C9BD7 /* WWEVideoFormat.swift in Sources */,
 				26AED4621F509334000C9BD7 /* WWEVideoManager.swift in Sources */,
 				26AED45B1F5088CC000C9BD7 /* WWEConfiguration.swift in Sources */,
-				26AED4651F5094DF000C9BD7 /* WWEFeedModel.swift in Sources */,
+				26AED4651F5094DF000C9BD7 /* WWEFeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
