@@ -15,8 +15,15 @@ private let reuseIdentifier = "VideoCell"
 class VideoFeedCollectionViewController: UICollectionViewController {
 
     var videosDataSource: VideosDataSource!
-    var feed: WWEFeedModel!
-    var selectedVideo: WWEVideoModel!
+    var feed: WWEFeed!
+    var selectedVideo: WWEVideo!
+    
+    var videoContainer: UIView!
+    var fullScreenPlayerViewController = AVPlayerViewController()
+    
+    var swipeDown: UISwipeGestureRecognizer?
+    var swipeUp: UISwipeGestureRecognizer?
+    var swipeLeft: UISwipeGestureRecognizer?
     
     override func viewDidLoad() {
         
@@ -62,6 +69,7 @@ class VideoFeedCollectionViewController: UICollectionViewController {
             
             if (wweFeed != nil) {
                 self.feed = wweFeed
+                
                 self.updateUserInterface()
             }
             else {
@@ -73,6 +81,64 @@ class VideoFeedCollectionViewController: UICollectionViewController {
     func updateUserInterface() {
         self.collectionView?.reloadData()
     }
+    
+    // MARK: - Swipping Methods
+    
+    func swipeDownAction() {
+        minimizeWindow(minimized: true, animated: true)
+    }
+    
+    func swipeUpAction() {
+        minimizeWindow(minimized: false, animated: true)
+    }
+    
+    func swipeLeftAction() {
+
+        UIView.animate(withDuration: 0.5, animations: { 
+            self.videoContainer.removeFromSuperview()
+        }) { (bool) in
+            
+            self.fullScreenPlayerViewController.player?.pause()
+            self.fullScreenPlayerViewController.dismiss(animated: false, completion: nil)
+        }
+    }
+    
+    func isMinimized() -> Bool {
+        return CGFloat((self.videoContainer?.frame.origin.y)!) > CGFloat(20)
+    }
+    
+    func minimizeWindow(minimized: Bool, animated: Bool) {
+        
+        if isMinimized() == minimized {
+            return
+        }
+        
+        var tallContainerFrame: CGRect
+        
+        if minimized == true {
+            
+            let mpWidth: CGFloat = 160
+            let mpHeight: CGFloat = 90
+            
+            let x: CGFloat = self.view.bounds.size.width - mpWidth - 20
+            let y: CGFloat = self.view.bounds.size.height - mpHeight - 20
+            
+            tallContainerFrame = CGRect(x: x, y: y, width: mpWidth, height: mpHeight)
+
+        } else {
+            
+            tallContainerFrame = self.view.bounds
+        }
+        
+        let duration: TimeInterval = (animated) ? 0.5 : 0.0
+        
+        UIView.animate(withDuration: duration, animations: {
+            self.videoContainer.frame = tallContainerFrame
+        })
+    }
+    
+    
+    // MARK: - Memory Management
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -97,14 +163,37 @@ class VideoFeedCollectionViewController: UICollectionViewController {
         let fullScreenPlayer = AVPlayer.init(playerItem: item)
         fullScreenPlayer.seek(to: currentTime)
         
-        let fullScreenPlayerViewController = AVPlayerViewController()
+        fullScreenPlayerViewController = AVPlayerViewController()
         fullScreenPlayerViewController.player = fullScreenPlayer
         fullScreenPlayerViewController.player?.play()
         
-        self.present(fullScreenPlayerViewController, animated: true, completion: nil)
+        self.videoContainer = UIView.init(frame: CGRect(x: 0.0, y: 0.0, width: self.view.bounds.size.width, height: self.view.bounds.size.height))
+        self.view.addSubview(self.videoContainer)
+        
+        self.addChildViewController(fullScreenPlayerViewController)
+        
+        // Add the child's View as a subview
+        self.videoContainer.addSubview(fullScreenPlayerViewController.view)
+        fullScreenPlayerViewController.view.frame = self.view.bounds
+        fullScreenPlayerViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        // tell the childviewcontroller it's contained in it's parent
+        fullScreenPlayerViewController.didMove(toParentViewController: self)
+        
+        swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(swipeDownAction))
+        swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(swipeUpAction))
+        swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeLeftAction))
+        
+        swipeDown?.direction = .down
+        swipeUp?.direction = .up
+        swipeLeft?.direction = .left
+        
+        self.videoContainer.addGestureRecognizer(swipeDown!)
+        self.videoContainer.addGestureRecognizer(swipeUp!)
+        self.videoContainer.addGestureRecognizer(swipeLeft!)
     }
 
-    // MARK: UICollectionViewDataSource
+    // MARK: - UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -130,35 +219,6 @@ class VideoFeedCollectionViewController: UICollectionViewController {
         return cell
     }
 
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
+    // MARK: - UICollectionViewDelegate
 
 }

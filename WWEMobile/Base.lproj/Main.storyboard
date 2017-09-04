@@ -22,26 +22,26 @@
         <scene sceneID="Tk2-Ed-Odi">
             <objects>
                 <collectionViewController id="nuQ-2X-ANT" customClass="VideoFeedCollectionViewController" customModule="WWEMobile" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="VxX-Il-SVE">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="VxX-Il-SVE">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AwT-kX-wjd">
-                            <size key="itemSize" width="170" height="210"/>
+                            <size key="itemSize" width="170" height="250"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCell" id="xk5-dY-pGH" customClass="VideoCell" customModule="WWEMobile">
-                                <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vff-2D-dlB" userLabel="Container View">
-                                            <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="250"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vtU-Op-dTS" userLabel="Video View">
                                                     <rect key="frame" x="13" y="5" width="144" height="81"/>
@@ -103,23 +103,53 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNs-Sj-pb0" userLabel="Description Label">
-                                                    <rect key="frame" x="13" y="110" width="144" height="95"/>
+                                                    <rect key="frame" x="13" y="110" width="144" height="90"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="95" id="YN0-4h-LEY"/>
+                                                        <constraint firstAttribute="height" constant="90" id="YN0-4h-LEY"/>
                                                         <constraint firstAttribute="width" constant="144" id="yxE-xX-cL0"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="11"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhp-TC-18M" userLabel="Like Button">
+                                                    <rect key="frame" x="13" y="202" width="44" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="O8o-oc-3c6"/>
+                                                        <constraint firstAttribute="height" constant="40" id="QCs-ol-Peb"/>
+                                                    </constraints>
+                                                    <state key="normal" image="like-off">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="likeTapped:" destination="xk5-dY-pGH" eventType="touchUpInside" id="fYo-2d-mb6"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuB-Dd-5KH" userLabel="Dislike Button">
+                                                    <rect key="frame" x="113" y="202" width="44" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="hop-su-hdo"/>
+                                                        <constraint firstAttribute="height" constant="40" id="pIq-hG-SPs"/>
+                                                    </constraints>
+                                                    <state key="normal" image="dislike-off">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="dislikeTapped:" destination="xk5-dY-pGH" eventType="touchUpInside" id="PKz-r6-yIm"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="vtU-Op-dTS" secondAttribute="trailing" constant="13" id="AIb-uf-YKF"/>
+                                                <constraint firstItem="Nhp-TC-18M" firstAttribute="leading" secondItem="vff-2D-dlB" secondAttribute="leading" constant="13" id="BYv-WC-HAv"/>
                                                 <constraint firstItem="J5T-vW-bR6" firstAttribute="top" secondItem="vtU-Op-dTS" secondAttribute="bottom" constant="5" id="Doa-Kc-wdT"/>
                                                 <constraint firstItem="vtU-Op-dTS" firstAttribute="top" secondItem="vff-2D-dlB" secondAttribute="top" constant="5" id="FhQ-Nq-RTe"/>
                                                 <constraint firstItem="DNs-Sj-pb0" firstAttribute="top" secondItem="J5T-vW-bR6" secondAttribute="bottom" constant="5" id="Jgs-th-h0C"/>
                                                 <constraint firstItem="J5T-vW-bR6" firstAttribute="centerX" secondItem="vtU-Op-dTS" secondAttribute="centerX" id="Jgu-JO-S28"/>
+                                                <constraint firstAttribute="trailing" secondItem="WuB-Dd-5KH" secondAttribute="trailing" constant="13" id="NUn-63-3c5"/>
+                                                <constraint firstAttribute="bottom" secondItem="Nhp-TC-18M" secondAttribute="bottom" constant="8" id="adQ-N1-tgo"/>
+                                                <constraint firstAttribute="bottom" secondItem="WuB-Dd-5KH" secondAttribute="bottom" constant="8" id="gn2-2i-K2A"/>
                                                 <constraint firstItem="vtU-Op-dTS" firstAttribute="leading" secondItem="vff-2D-dlB" secondAttribute="leading" constant="13" id="iJu-OI-xme"/>
                                                 <constraint firstItem="DNs-Sj-pb0" firstAttribute="centerX" secondItem="vff-2D-dlB" secondAttribute="centerX" id="kZT-sQ-NZH"/>
                                                 <constraint firstItem="vtU-Op-dTS" firstAttribute="centerX" secondItem="vff-2D-dlB" secondAttribute="centerX" id="uaX-5j-ad2"/>
@@ -133,9 +163,11 @@
                                     <constraint firstItem="vff-2D-dlB" firstAttribute="width" secondItem="xk5-dY-pGH" secondAttribute="width" id="Jlp-ro-Dem"/>
                                     <constraint firstItem="vff-2D-dlB" firstAttribute="centerY" secondItem="xk5-dY-pGH" secondAttribute="centerY" id="iEh-QA-aTi"/>
                                 </constraints>
-                                <size key="customSize" width="170" height="210"/>
+                                <size key="customSize" width="170" height="250"/>
                                 <connections>
                                     <outlet property="containerView" destination="vff-2D-dlB" id="Rul-U1-1xl"/>
+                                    <outlet property="dislikeButton" destination="WuB-Dd-5KH" id="7cT-YP-Pyh"/>
+                                    <outlet property="likeButton" destination="Nhp-TC-18M" id="YgY-fw-Qvh"/>
                                     <outlet property="playerView" destination="zJf-wu-FWE" id="FAr-SY-qo9"/>
                                     <outlet property="videoDate" destination="J5T-vW-bR6" id="J6w-mR-bcg"/>
                                     <outlet property="videoDescription" destination="DNs-Sj-pb0" id="Odi-eA-ecz"/>
@@ -254,7 +286,7 @@
             <objects>
                 <navigationController id="wdr-KI-SjT" sceneMemberID="viewController">
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="cvj-YU-rzE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="cvj-YU-rzE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -270,6 +302,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dislike-off" width="44" height="40"/>
+        <image name="like-off" width="44" height="40"/>
         <image name="play" width="48" height="48"/>
         <image name="wwe-logo.png" width="150" height="138"/>
     </resources>

@@ -23,7 +23,7 @@ open class NetworkManager: NSObject {
     
     // MARK: - Videos
     
-    public func getVideos(completionHandler completion: @escaping (WWEFeedModel?, NSError?) -> ()) {
+    func getVideos(completionHandler completion: @escaping (WWEFeed?, NSError?) -> ()) {
         videoManager.getVideos { (wweFeed, error) in
             
             if (wweFeed != nil) {

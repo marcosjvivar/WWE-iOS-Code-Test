@@ -8,18 +8,24 @@
 
 import UIKit
 import SwiftyJSON
+import RealmSwift
 
-open class WWEFeedModel: NSObject {
+class WWEFeed: Object {
     
-    public var videos: [WWEVideoModel] = []
+    var videos = List<WWEVideo> ()
     
-    init(json: JSON) {
+    static func create(json: JSON) -> WWEFeed {
+        
+        let feed = WWEFeed()
+        
         let videoObjects = json[attributes.videos.rawValue].array
         
         for object in videoObjects! {
-            let video = WWEVideoModel.init(json: object)
+            let video = WWEVideo.create(json: object)
             
-            self.videos.append(video)
+            feed.videos.append(video)
         }
+        
+        return feed
     }
 }
