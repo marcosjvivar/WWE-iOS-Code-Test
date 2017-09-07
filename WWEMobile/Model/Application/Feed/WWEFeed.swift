@@ -1,5 +1,5 @@
 //
-//  WWEFeedModel.swift
+//  WWEFeed.swift
 //  WWEMobile
 //
 //  Created by Marcos Jesús Vivar on 8/25/17.
